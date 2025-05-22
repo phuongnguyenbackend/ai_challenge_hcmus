@@ -1,0 +1,43 @@
+346,5,648,33: Built for all delivery fleets.
+28,25,54,37: 9:19
+258,25,285,38: 78%
+345,50,624,69: Whether you manage a small fleet of
+68,72,148,98: 0.2 aall
+230,81,284,98: E 36th
+344,69,630,90: delivery vehicles or a large network of
+345,88,661,106: drivers, our NavaFLEET Solution scales to
+344,108,434,128: your needs.
+29,129,66,144: Then
+94,129,172,144: Park Ave Ss
+384,147,608,166: Track your fleet in real-time
+172,177,180,184: —)
+384,167,591,187: See exact locations and get
+44,185,80,198: NEXT
+385,184,622,206: minute-by-minute updates with
+170,205,180,212: tu
+168,212,178,224: =
+385,205,490,225: Google Maps.
+270,250,284,262: w
+384,244,621,263: Set boundaries and get alerts
+385,261,565,280: Receive notifi cations for
+384,282,582,298: unauthorized movements,
+384,300,588,318: route deviations, and more
+383,339,577,358: Analyze driver behavior.
+385,358,597,377: Monitor speed, braking, and
+382,376,594,398: idling to improve safety and
+383,394,484,416: performance
+29,418,116,437: 3 minutes
+28,440,134,453: 0.8 mi 8:52 PM
+385,436,588,454: Optimize routes and Save
+383,454,624,472: fuel. Reduce costs with smarter,
+385,473,546,490: more efficient routes.
+88,492,224,511: Drop-off package
+346,499,632,519: NavaFleet leverages Google Maps for
+96,512,216,528: 425 Charleston Rd
+344,516,624,539: precise fleet visibility and operational
+344,535,610,557: efficiency. Its user-friendly, scalable
+345,555,610,577: interface requires minima training.
+345,576,570,593: Customize alerts, reports, and
+345,594,611,614: dashboards to suit your operations.
+344,612,625,635: reducing costs, improving safety, and
+344,631,568,653: enhancing delivery efficiency.
