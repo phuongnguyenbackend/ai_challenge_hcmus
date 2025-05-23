@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException, UploadFile, File
+from fastapi import APIRouter, HTTPException, UploadFile, File, Form
 from fastapi.responses import FileResponse
 from utils.translate import Translate, TranslationRequest, detect_language
 import uuid
@@ -72,7 +72,10 @@ async def translate_pdf(file: UploadFile = File(...)):
 
 
 @router.post("/translate_image")
-async def translate_image(file: UploadFile = File(...), tgt_lang: str = "vi"):
+async def translate_image(
+    file: UploadFile = File(...),
+    tgt_lang: str = Form(...)  
+):
     if not file.content_type.startswith("image/"):
         raise HTTPException(status_code=400, detail="Unsupported file type")
 
@@ -82,7 +85,7 @@ async def translate_image(file: UploadFile = File(...), tgt_lang: str = "vi"):
 
     file_id = str(uuid.uuid4())
     input_path = os.path.join(UPLOAD_FOLDER, f"{file_id}.{file_ext}")
-    output_path = os.path.join(OUTPUT_FOLDER, f"{file_id}_translated.png")  # output dạng PNG
+    output_path = os.path.join(OUTPUT_FOLDER, f"{file_id}_translated.png")
 
     content = await file.read()
     nparr = np.frombuffer(content, np.uint8)
@@ -97,4 +100,4 @@ async def translate_image(file: UploadFile = File(...), tgt_lang: str = "vi"):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Processing error: {e}")
 
-    return FileResponse(output_path, media_type="image/png", filename=f"translated_{file.filename}")
+    return FileResponse(output_path, media_type="image/png", filename=f"{file_id}_translated.png")
